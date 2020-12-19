@@ -3,7 +3,7 @@ body{
 	margin: 0;
 	padding: 0;
 	color: white;
-	background-color: rgba(53, 59, 72,1.0);
+	background-color: #262523;
 	font-family: 'PT Sans', sans-serif;
 	min-width: 600px;        
    	width: auto !important;  
@@ -90,18 +90,9 @@ body{
   	background-image: url(files/1.jpg)	
 }
 
-
-#portfolio{
-	width: 100%;
-	height: 500px;
-	margin: 0;
-	padding: 0;
-	background-color: ;
-}
-
 #specjalizacja{
 	width: 100%;
-	height: 500px;
+	height: 0px;
 	margin: 0;
 	padding: 0;
 	background-color: ;
@@ -185,7 +176,6 @@ body{
   	align-items: center;
   	justify-content: center;
   	flex-direction: column;
-	background: #262523;
 }
 
 .lab{
@@ -255,4 +245,75 @@ body{
 	width: 40px;
 	padding: 0;
 	margin: 0;
+}
+
+.dot{
+	margin: 0;
+	padding: 0;
+	width: 35px;
+	height: 10px;
+	border-radius: 25px;
+	background-color: yellow;
+	float: left;
+	margin: 10px 0;
+}
+.name{
+	float: left;
+	font-size: 24px;
+	font-weight: 900;
+	letter-spacing: 1px;
+	padding: 0 10px;
+	margin: 0;
+	line-height: 30px;
+}
+.date{
+	font-size: 14px;
+	line-height: 20px;
+}
+
+#portfolio{
+	width: auto;
+	display: flex;
+  	align-items: center;
+  	flex-direction: column;
+  	padding: 25px 0px;
+  	font-family: 'Nunito', sans-serif;
+}
+
+.row{
+	display: flex;
+  	align-items: center;
+  	flex-direction: row;
+  	height: 50px;
+  	width: 1100px;
+  	padding: 25px 0;
+}
+
+.row1{
+	width: 400px;
+	height: 50px;
+}
+
+.row2{
+	max-width: 700px;
+	height: 50px;
+}
+
+.title{
+	float: left;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin: 0;
+	line-height: 30px;
+	width: 750px;
+	height: 30px;
+}
+
+.text{
+	letter-spacing: 0.5px;
+	font-size: 16px;
+	line-height: 20px;
+	width: 750px;
+	height: 20px;
 }

@@ -15,10 +15,10 @@
 		<link rel="stylesheet" href="main.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/> 
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 		<meta property="og:title" content="Portfolio Damian Lampa - Programista Webowy">
 		<meta property="og:image" content="files/logo2.png">
-		<meta property="og:description" content="Programowanie Webowe, oraz serwis.">
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
 	</head>
 <!-- Page info end -->
 
@@ -28,8 +28,6 @@
 	<body>
 	<div id="container">
 
-	
-
 	<nav>
 
 		<div id="nav">
@@ -38,6 +36,7 @@
 		<ol>
 			<li><a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
 			<li><a href="#specjalizacja"><i class="far fa-file-alt"></i> Specjalizacja</a></li>
+			<li><a href="#umiejetnosci"><i class="far fa-address-book"></i> Umiejętnosci</a></li>
 			<li><a href="#kontakt"><i class="far fa-address-book"></i> Kontakt</a></li>
 		</ol>
 
@@ -45,13 +44,6 @@
 		</div>
 		
 	</nav>
-
-	<!-- Umiejętnosci -->
-	<div id="umiejetnosci">
-		<div id="1col">O mnie</div>
-		<div id="2col">Umiejki</div>
-	</div>
-	<!-- Umiejetnosci end -->
 
 	<!-- Portfolio -->
 	<div id="portfolio">
@@ -63,14 +55,74 @@
 	</div>
 	<!-- Specjalizacja end -->
 
-		<!-- Kontakt -->
-	<div id="kontakt">
+	<!-- Umiejętnosci -->
+	<div id="umiejetnosci">
+		<div id="col1">
+			<h1>Umiejętności<h1>
+			<p>Programy, Języki i Inne<p>
+		</div>
+		<div id="col2">
+			<ol>
+				<li>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>PHP</li>
+						<li>JS</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li>WordPress</li>
+						<li>Joomla</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li>Photoshop</li>
+						<li>Ilustrator</li>
+					</ul>
+				</li>
+			</ol>
+		</div>
+	</div>
+	<!-- Umiejetnosci end -->
+
+	<!-- Kontakt -->
+		<div id="kontakt">
+		<div id="catname">Kontakt</div>
+		<form action="/action_page.php">
+
+		<label for="name" class="lab">Imię</label>
+  		<div class="iboxdiv"><input type="text" class="ibox" id="name"></div>
+  		<div style="clear:both;"></div>
+
+  		<label for="2name" class="lab">Nazwisko</label>
+ 		<div class="iboxdiv"><input type="text" class="ibox" id="2name"></div>
+ 		<div style="clear:both;"></div>
+
+		<label for="email" class="lab">Email</label>
+		<div class="iboxdiv"><input type="email" class="ibox" id="email"></div>
+		<div style="clear:both;"></div>
+
+		<label for="number" class="lab">Numer</label>
+		<div class="iboxdiv"><input type="tel" class="ibox" id="number"></div>
+		<div style="clear:both;"></div>
+
+		<label for="quest" class="lab">Wiadomość</label>
+		<div class="iboxdiv"><textarea id="quest" class="ibox" rows="3"></textarea></div>
+		<div style="clear:both;"></div>
+
+		<div id="send"><input type="submit" id="przeslij" value="Prześlij"></div>
+		<label for="przeslij" class="labsub">Odpowiedz poprzez email w ciągu 24h.</label>
+		</form>
 	</div>
 	<!-- Kontakt end -->
 
 	<!-- Footer -->
 	<footer>
 		<div id="footer">
+			<img src="files/ico2.png"></img>
 			<p>Copyright © Damian Lampa 2020. All rights reserved!</p>
 		</div>
 	</footer>

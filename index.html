@@ -1,3 +1,5 @@
+<!-- ---------------------------------------------------------------- -->
+
 <!DOCTYPE HTML>
 <html lang="pl">
 
@@ -14,10 +16,6 @@
 		<link rel="icon" href="files/favicon.ico" type="image/ico">
 		<link rel="stylesheet" href="main.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/> 
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<meta property="og:title" content="Portfolio Damian Lampa - Programista Webowy">
-		<meta property="og:image" content="files/logo2.png">
-		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
 	</head>
 <!-- Page info end -->
@@ -27,25 +25,22 @@
 <!-- Page Body --> 	
 	<body>
 	<div id="container">
+
+<!-- Nav -->
 	<div style="height: 80px;"></div>
+
 	<nav>
-
-		<div id="nav">
-		<a href="index.html"><img src="files/logo2.png"></img></a>
-
+		<a href="index.html"><img src="files/logo.png"></img></a>
 		<ol>
 			<li><a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
 			<li><a href="#specjalizacja"><i class="far fa-file-alt"></i> Specjalizacja</a></li>
 			<li><a href="#umiejetnosci"><i class="far fa-address-book"></i> Umiejętnosci</a></li>
 			<li><a href="#kontakt"><i class="far fa-address-book"></i> Kontakt</a></li>
 		</ol>
-
-		<div style="clear:both;"></div>
-		</div>
-		
 	</nav>
+<!-- Nav End -->
 
-	<!-- Portfolio -->
+<!-- Portfolio -->
 	<div id="portfolio">
 
 		<div class="row">
@@ -56,7 +51,7 @@
 			<div class="date">2069 - 2137</div>
 		</div>
 		<div class="row2">
-			<div class="title">Certyfikat puszczania sie twojej starej.</div>
+			<div class="title">Certyfikat z czegos tam.</div>
 			<div class="text">Link do certyfikatu w zakladce certyfikaty.</div>
 		</div>
 		<div style="clear:both;"></div>
@@ -91,90 +86,93 @@
 		</div>
 
 	</div>
-	<!-- Portfolio end -->
+<!-- Portfolio end -->
 
-	<!-- Specjalizacja -->
-	<div id="specjalizacja">
-	</div>
-	<!-- Specjalizacja end -->
+<!-- Specjalizacja -->
+	<div id="specjalizacja"></div>
+<!-- Specjalizacja end -->
 
-	<!-- Umiejętnosci -->
-	<div id="umiejetnosci">
+<!-- Umiejętnosci -->
+	<div id="skills">
 		<div id="col1">
-			<h1>Umiejętności<h1>
-			<p>Programy, Języki i Inne<p>
+			<h1>Umiejętności</h1>
+			<p>Programy, Języki i Inne</p>
 		</div>
-		<div id="col2">
-			<ol>
-				<li>
-					<ul>
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>PHP</li>
-						<li>JS</li>
-					</ul>
-				</li>
-				<li>
-					<ul>
-						<li>WordPress</li>
-						<li>Joomla</li>
-					</ul>
-				</li>
-				<li>
-					<ul>
-						<li>Photoshop</li>
-						<li>Ilustrator</li>
-					</ul>
-				</li>
-			</ol>
+
+	<div id="col2">
+		<ol>
+			<li>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>PHP</li>
+					<li>JS</li>
+				</ul>
+			</li>
+			<li>
+				<ul>
+					<li>WordPress</li>
+					<li>Joomla</li>
+				</ul>
+			</li>
+			<li>
+				<ul>
+					<li>Photoshop</li>
+					<li>Ilustrator</li>
+				</ul>
+			</li>
+		</ol>
+	</div>
+
+	</div>
+<!-- Umiejetnosci end -->
+
+<!-- Kontakt -->
+	<div id="kontakt">
+	<div id="catname">Kontakt</div>
+	<form action="/action_page.php" method="post">
+
+		<div id="duorow">
+
+		<div class="rowcol">
+		<label for="duo">Imię i nazwisko</label>
+		<input type="text" class="duo">
 		</div>
+
+		<div class="rowcol">
+		<label for="duo">Adres Email</label>
+		<input type="email" class="duo">
+		</div>
+
+		</div>
+
+		<div class="rowcol1">
+		<label for="solo">Wiadomosc</label>
+		<textarea class="solo" rows="3"></textarea>
+		</div>
+
+		<div id="sub">
+		<label for="subm">Odpowiedź w 24h na podany adres email.</label>
+		<input type="submit" class="subm">
+		<div style="clear:both;"></div>
+		</div>
+
+	</form>
 	</div>
-	<!-- Umiejetnosci end -->
+<!-- Kontakt end -->
 
-	<!-- Kontakt -->
-		<div id="kontakt">
-		<div id="catname">Kontakt</div>
-		<form action="/action_page.php" method="post">
-
-		<label for="name" class="lab">Imię</label>
-  		<div class="iboxdiv"><input type="text" class="ibox" id="name"></div>
-  		<div style="clear:both;"></div>
-
-  		<label for="2name" class="lab">Nazwisko</label>
- 		<div class="iboxdiv"><input type="text" class="ibox" id="2name"></div>
- 		<div style="clear:both;"></div>
-
-		<label for="email" class="lab">Email</label>
-		<div class="iboxdiv"><input type="email" class="ibox" id="email"></div>
-		<div style="clear:both;"></div>
-
-		<label for="number" class="lab">Numer</label>
-		<div class="iboxdiv"><input type="tel" class="ibox" id="number"></div>
-		<div style="clear:both;"></div>
-
-		<label for="quest" class="lab">Wiadomość</label>
-		<div class="iboxdiv"><textarea id="quest" class="ibox" rows="3"></textarea></div>
-		<div style="clear:both;"></div>
-
-		<div id="send"><input type="submit" id="przeslij" value="Prześlij"></div>
-		<label for="przeslij" class="labsub">Odpowiedz poprzez email w ciągu 24h.</label>
-		</form>
-	</div>
-	<!-- Kontakt end -->
-
-	<!-- Footer -->
+<!-- Footer -->
 	<footer>
 		<div id="footer">
-			<img src="files/ico2.png"></img>
+			<img src="files/santa.png"></img>
 			<p>Copyright © Damian Lampa 2020. All rights reserved!</p>
 		</div>
 	</footer>
-	<!-- Footer end -->
+<!-- Footer end -->
 
 	</div>
-
 	</body>
-	<!-- Body end -->
+<!-- Body end -->
 
 <!-- ---------------------------------------------------------------- -->
 

@@ -1,14 +1,16 @@
-/** Body **/
+/** ---------------------------------------------------- **/
+
+/** MAIN **/
+
 body{
 	margin: 0;
 	padding: 0;
 	color: white;
 	background-color: #262523;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	min-width: 600px;        
    	width: auto !important;  
 }
-/** Body END**/
 
 #container{
 	width: auto;
@@ -18,51 +20,86 @@ body{
 	flex-direction: column;
 }
 
-#nav{
+#catname{
+	font-size: 30px;
+	width: 100%;
+	text-align: center;
+	padding: 20px 0;
+	font-weight: 900; 
+	letter-spacing: 1px;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/** MAIN END **/
+
+/** ---------------------------------------------------- **/
+
+/** NAV **/
+
+nav{
 	width: 100%;
 	height: 80px;
 	background-color: #273c75;
   	display: flex;
   	align-items: center;
   	justify-content: center;
-  	 position: fixed;
+  	position: fixed;
  	top: 0;
 }
 
-#nav img{
-	min-height: 60px;
-	min-width: 180px;
+nav a{
 	max-height: 80px;
-	max-width: 180px;
+	width: 180px;
 	padding: 0;
+	margin: 0;
 }
 
-#nav ol{
+nav ol{
 	margin: 0;
 	padding: 0;
 }
 
-#nav ol > li{
+nav ol > li{
 	display: inline-block;
 	font-size: 20px;
 	margin: 0 0 0 20px;
 	line-height: 80px;
 }
 
-#nav ol > li a:hover{
-	transition: 0.5s;
-	border-bottom: solid 1px;
-}
-
-#nav ol > li a{
+nav ol > li a{
 	text-decoration: none;
 	color: white;
 	font-weight: 700;
 	letter-spacing: 1px;
 }
 
+nav ol > li a:hover{
+	transition: 0.5s;
+	border-bottom: solid 2px;
+	line-height: 78px;
+}
 
-/** Footer **/
+/** NAV END **/
+
+/** ---------------------------------------------------- **/
+
+/** FOOTER **/
+
 #footer{
 	background-color: rgba(47, 48, 48,1.0);
 	display: flex;
@@ -70,44 +107,115 @@ body{
   	justify-content: center;
 	height: 40px;
 	font-size: 16px;
+	line-height: 40px;
 }
 
 #footer p{
-	padding: 10px 0px 10px 0px;
 	margin: 0;
 }
-/** Footer END **/
 
-#umiejetnosci{
-	width: 100%;
-	height: 400px;
+#footer img{
+	height: 40px;
+	width: 40px;
+}
+
+/** FOOTER END **/
+
+/** ---------------------------------------------------- **/
+
+/** PORTFOLIO **/
+
+#portfolio{
+	width: auto;
+	display: flex;
+  	align-items: center;
+  	flex-direction: column;
+  	padding: 25px 0px;
+}
+
+.row{
+	display: flex;
+  	align-items: center;
+  	flex-direction: row;
+  	height: 50px;
+  	width: 1100px;
+  	padding: 25px 0;
+}
+
+.row1{
+	width: 350px;
+	height: 50px;
+}
+
+.row2{
+	max-width: 750px;
+	height: 50px;
+}
+
+.dot{
 	margin: 0;
 	padding: 0;
-	background-color: ;
+	width: 35px;
+	height: 10px;
+	border-radius: 25px;
+	background-color: #fff200;
+	float: left;
+	margin: 10px 0;
+}
+.name{
+	float: left;
+	font-size: 24px;
+	font-weight: 900;
+	letter-spacing: 1px;
+	padding: 0 10px;
+	margin: 0;
+	line-height: 30px;
+}
+.date{
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.title{
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin: 0;
+	line-height: 30px;
+	width: 750px;
+	height: 30px;
+}
+
+.text{
+	letter-spacing: 0.5px;
+	font-size: 16px;
+	line-height: 20px;
+	width: 750px;
+	height: 20px;
+}
+
+/** PORTFOLIO END **/
+
+/** ---------------------------------------------------- **/
+
+/** UMIEJETNOSCI **/
+
+#skills{
+	width: 100%;
+	height: 400px;
 	display: flex;
   	align-items: center;
   	justify-content: center;
-  	background-image: url(files/1.jpg)	
+  	background-image: url(files/skills.jpg)	
 }
 
-#specjalizacja{
-	width: 100%;
-	height: 0px;
-	margin: 0;
-	padding: 0;
-	background-color: ;
-}
 
 #col1{
 	float:left;
-  	margin: 0;
-  	padding: 0;
 }
 
 #col2{
 	float:left;
-  	margin: 0;
-  	padding: 0;
 }
 
 #col2 ol {
@@ -142,7 +250,8 @@ body{
 	color: white;
 	font-size: 32px;
 	text-align: right;
-	font-weight: bold;
+	font-weight: 700;
+	margin: 0;
 }
 
 #col1 p{
@@ -150,170 +259,130 @@ body{
 	font-size: 16px;
 	text-align: left;
 	padding-left: 2px;
+	margin: 0;
 }
 
-.ibox{
-	resize: vertical;
-	max-height: 150px;
-	min-height: 25px;
-	min-width: 230px;
-	margin: 0;
-	padding: 0;
-	border-radius: 10px;
-	outline: none;
-	font-size: 18px;
-	padding: 5px 10px;
-	margin-bottom: 15px;
-	font-family: 'Nunito', sans-serif;
-	border: 0px;
+/** UMIEJETNOSCI END **/
+
+/** ---------------------------------------------------- **/
+
+/** SPECJALIZACJA **/
+
+#specjalizacja{
+	width: 100%;
+	height: 0px;
 }
+
+/** SPECJALIZACJA END **/
+
+/** ---------------------------------------------------- **/
+
+/** KONTAKT **/
 
 #kontakt{
 	width: 100%;
 	height: auto;
-	padding: 0px 0 20px 0;
 	display: flex;
-  	align-items: center;
+	align-items: center;
   	justify-content: center;
   	flex-direction: column;
+  	padding: 10px 0px;
 }
 
-.lab{
-	float: left;
-	min-width: 110px;
-	text-align: right;
-	font-size: 20px;
-	padding: 0px 10px;
-	margin-bottom: 15px;
-	line-height: 35px;
-	font-family: 'Nunito', sans-serif;
-}
-
-.iboxdiv{
-	float: left;
-	min-width: 250px;
-	display: flex;
-  	align-items: center;
-  	justify-content: center;
-  	margin: 0;
-	padding: 0;
-}
-
-#kontakt input[type=submit]{
-    padding:5px 10px; 
-    border:0 none;
-    cursor:pointer;
-    -webkit-border-radius: 5px;
-    border-radius: 5px; 
-    font-family: 'Nunito', sans-serif;
-    font-size: 16px;
-    width: 80px;
-    height: 30px;
-    font-weight: 700;
-}
-
-#send{
-	width: auto;
-    height: auto;
-	margin-left: auto;
-	float: right;
-}
-
-#catname{
-	font-size: 30px;
-	font-family: 'Nunito', sans-serif;
-	width: 100%;
-	text-align: center;
-	padding: 20px 0;
-	font-weight: 900; 
-	letter-spacing: 1px;
-}
-
-.labsub{
-	float: right;
-	height: 30px;
-	line-height: 30px;
-	text-align: right;
-	font-size: 12px;
-	min-width: 220px;
-	padding: 0 5px;
-	font-family: 'Nunito', sans-serif;
-}
-
-#footer img{
-	height: 40px;
-	width: 40px;
-	padding: 0;
-	margin: 0;
-}
-
-.dot{
+#kontakt input{
+	background-color: rgba(0,0,0,0.0);
+	border: solid 1px white;
+	border-radius: 5px;
+	height: 33px;
+	outline: none;
+	color: white;
 	margin: 0;
 	padding: 0;
-	width: 35px;
-	height: 10px;
-	border-radius: 25px;
-	background-color: yellow;
-	float: left;
-	margin: 10px 0;
-}
-.name{
-	float: left;
-	font-size: 24px;
-	font-weight: 900;
-	letter-spacing: 1px;
-	padding: 0 10px;
-	margin: 0;
-	line-height: 30px;
-}
-.date{
-	font-size: 14px;
-	line-height: 20px;
-}
-
-#portfolio{
-	width: auto;
-	display: flex;
-  	align-items: center;
-  	flex-direction: column;
-  	padding: 25px 0px;
-  	font-family: 'Nunito', sans-serif;
-}
-
-.row{
-	display: flex;
-  	align-items: center;
-  	flex-direction: row;
-  	height: 50px;
-  	width: 1100px;
-  	padding: 25px 0;
-}
-
-.row1{
-	width: 400px;
-	height: 50px;
-}
-
-.row2{
-	max-width: 700px;
-	height: 50px;
-}
-
-.title{
-	float: left;
-	font-size: 24px;
-	font-weight: 700;
-	letter-spacing: 1px;
-	margin: 0;
-	line-height: 30px;
-	width: 750px;
-	height: 30px;
-}
-
-.text{
-	letter-spacing: 0.5px;
 	font-size: 16px;
-	line-height: 20px;
-	width: 750px;
-	height: 20px;
+	padding: 0px 5px;
 }
+
+#kontakt input:focus{
+	cursor: pointer;
+	border-color: #fff200;
+	transition: 0.4s;
+}
+
+.rowcol{
+	display: flex;
+  	flex-direction: column;
+  	width: 180px;
+  	margin: 10px;
+  	height: 60px;
+}
+
+#duorow{
+	display: flex;
+  	flex-direction: row;
+}
+
+.rowcol1{
+	display: flex;
+  	flex-direction: column;
+  	margin: 10px;
+  	width: 380px;
+}
+
+#kontakt textarea{
+	background-color: rgba(0,0,0,0.0);
+	border: solid 1px white;
+	border-radius: 10px;
+	min-height: 33px;
+	outline: none;
+	color: white;
+	resize: vertical;
+	font-size: 16px;
+	padding: 5px 5px;
+}
+
+#kontakt textarea:focus{
+	cursor: pointer;
+	border-color: #fff200;
+	transition: 0.4s;
+}
+
+#kontakt label{
+	height: 25px;
+	line-height: 20px;
+	font-size: 16px;
+}
+
+#sub{
+	width: 380px;
+	height: 35px;
+	margin-bottom: 15px;
+	margin-right: auto;
+	margin-left:auto;
+}
+
+#sub label{
+	height: 35px;
+	width: 315px;
+	line-height: 35px;
+	font-size: 12px;
+}
+
+#sub input{
+	padding: 5px 15px;
+	height: 35px;
+	width: 85px;
+	font-weight: 700;
+	font-size: 15px;
+	float: right;
+	border-radius: 20px;
+}
+
+#sub input:hover{
+	cursor: pointer;
+	border-color: #fff200;
+	color: #fff200;
+	transition: 0.4s;
+}
+/** KONTAKT END **/
+
+/** ---------------------------------------------------- **/

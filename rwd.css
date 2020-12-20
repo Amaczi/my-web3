@@ -2,7 +2,7 @@
 @media only screen and (max-width: 640px){
 #skills{
 	flex-direction: column;
-	background-image: url(files/skills-small.jpg)	
+	background-image: url(files/skills-small.jpg);	
 }
 
 nav{
@@ -85,7 +85,7 @@ nav ol > li a:hover{
 @media only screen and (max-width: 1007px){
 #skills{
 	flex-direction: column;
-	background-image: url(files/skills-small.jpg)	
+	background-image: url(files/skills-small.jpg);	
 }
 
 nav{
@@ -169,7 +169,7 @@ nav ol > li a:hover{
 
 #skills{
 	flex-direction: row;
-	background-image: url(files/skills.jpg)	
+	background-image: url(files/skills.jpg);
 }
 
 nav{

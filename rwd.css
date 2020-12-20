@@ -79,6 +79,70 @@ nav ol > li a:hover{
 	line-height: 48px;
 }
 
+#portfolio{
+	width: 100%;
+	display: flex;
+  	align-items: center;
+  	flex-direction: column;
+  	padding-bottom: 25px;
+  	margin: 0px;
+}
+
+.row{
+	display: flex;
+  	align-items: center;
+  	flex-direction: column;
+  	padding: 25px 0;
+}
+
+.row1{
+	width: 350px;
+	height: 50px;
+	margin-bottom: 15px;
+}
+
+.row2{
+	width: 350px;
+}
+
+.dot{
+	margin: 0;
+	padding: 0;
+	width: 35px;
+	height: 10px;
+	border-radius: 25px;
+	background-color: #fff200;
+	float: left;
+	margin: 10px 0;
+}
+.name{
+	float: left;
+	font-size: 20px;
+	font-weight: 900;
+	letter-spacing: 1px;
+	padding: 0 10px;
+	margin: 0;
+	line-height: 30px;
+}
+.date{
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.title{
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin: 0;
+	line-height: 30px;
+}
+
+.text{
+	letter-spacing: 0.5px;
+	font-size: 16px;
+	line-height: 20px;
+}
+
 }
 
 /** ---------------------------------------------------- **/
@@ -163,6 +227,70 @@ nav ol > li a:hover{
 	line-height: 48px;
 }
 
+#portfolio{
+	width: 100%;
+	display: flex;
+  	align-items: center;
+  	flex-direction: column;
+  	padding-bottom: 25px;
+  	margin: 0px;
+}
+
+.row{
+	display: flex;
+  	align-items: center;
+  	flex-direction: column;
+  	padding: 25px 0;
+}
+
+.row1{
+	width: 350px;
+	height: 50px;
+	margin-bottom: 15px;
+}
+
+.row2{
+	width: 350px;
+}
+
+.dot{
+	margin: 0;
+	padding: 0;
+	width: 35px;
+	height: 10px;
+	border-radius: 25px;
+	background-color: #fff200;
+	float: left;
+	margin: 10px 0;
+}
+.name{
+	float: left;
+	font-size: 20px;
+	font-weight: 900;
+	letter-spacing: 1px;
+	padding: 0 10px;
+	margin: 0;
+	line-height: 30px;
+}
+.date{
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.title{
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin: 0;
+	line-height: 30px;
+}
+
+.text{
+	letter-spacing: 0.5px;
+	font-size: 16px;
+	line-height: 20px;
+}
+
 }
 
 /** ---------------------------------------------------- **/
@@ -182,8 +310,6 @@ nav{
   	display: flex;
   	align-items: center;
   	justify-content: center;
-  	position: fixed;
- 	top: 0;
 }
 
 nav a{
@@ -216,6 +342,81 @@ nav ol > li a:hover{
 	transition: 0.5s;
 	border-bottom: solid 2px;
 	line-height: 78px;
+}
+
+#portfolio{
+	width: 100%;
+	display: flex;
+  	align-items: center;
+  	flex-direction: column;
+  	padding-bottom: 25px;
+  	margin: 0px;
+}
+
+.row{
+	display: flex;
+  	align-items: center;
+  	flex-direction: row;
+  	height: 50px;
+  	padding: 25px 0;
+}
+
+.row1{
+	width: 300px;
+	height: 50px;
+}
+
+.row2{
+	width: 700px;
+	height: 50px;
+}
+
+.dot{
+	margin: 0;
+	padding: 0;
+	width: 35px;
+	height: 10px;
+	border-radius: 25px;
+	background-color: #fff200;
+	float: left;
+	margin: 10px 0;
+}
+.name{
+	float: left;
+	font-size: 20px;
+	font-weight: 900;
+	letter-spacing: 1px;
+	padding: 0 10px;
+	margin: 0;
+	line-height: 30px;
+}
+.date{
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.title{
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin: 0;
+	line-height: 30px;
+	height: 30px;
+}
+
+.text{
+	letter-spacing: 0.5px;
+	font-size: 16px;
+	line-height: 20px;
+	height: 20px;
+}
+
+label #menu{
+	display: none;
+}
+
+#butt{
+	display: none;
 }
 
 }

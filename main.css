@@ -8,8 +8,6 @@ body{
 	color: white;
 	background-color: #262523;
 	font-family: 'Nunito', sans-serif;
-	min-width: 600px;        
-   	width: auto !important;  
 }
 
 #container{
@@ -53,27 +51,153 @@ body{
 
 @media only screen and (max-width: 640px) {
   nav{
-  	background-color: red;
+  	width: 100%;
+	height: 80px;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+ 	background-color: #273c75;
   }
+  nav a{
+	max-height: 50px;
+	width: auto;
+	padding: 0;
+	margin: 0;
 }
 
-@media only screen and (min-width: 641px) {
+nav ol{
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: -200px;
+	height: 200px;
+	transition: 2s;
+	background-color: #273c75;
+	width: 100%;
+}
+
+label #menu{
+	font-size: 30px;
+	color: white;
+	height: 80px;
+	width: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+	position: absolute;
+	cursor: pointer;
+	right: 0;
+	top: 0;
+}
+
+#butt{
+	display: none;
+}
+
+#butt:checked ~ nav ol{
+	position: fixed;
+	top: 80px;
+}
+
+nav ol > li{
+	font-size: 20px;
+	margin: 0;
+	line-height: 50px;
+	display: flex;
+  	justify-content: center;
+	list-style-type: none;
+} 
+
+nav ol > li a{
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+nav ol > li a:hover{
+	transition: 0.5s;
+	border-bottom: solid 2px;
+	line-height: 48px;
+}
+}
+
+@media only screen and (max-width: 1007px) {
   	nav{
-  	background-color: yellow;
+  	width: 100%;
+	height: 80px;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+ 	background-color: #273c75;
   }
+  nav a{
+	max-height: 50px;
+	width: auto;
+	padding: 0;
+	margin: 0;
 }
 
-@media only screen and (min-width: 1007px) {
-	nav{
-  	background-color: green;
-  }
+nav ol{
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: -200px;
+	height: 200px;
+	transition: 2s;
+	background-color: #273c75;
+	width: 100%;
 }
 
-/** RWD END **/
+label #menu{
+	font-size: 30px;
+	color: white;
+	height: 80px;
+	width: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+	position: absolute;
+	cursor: pointer;
+	right: 0;
+	top: 0;
+}
 
-/** ---------------------------------------------------- **/
+#butt{
+	display: none;
+}
 
-/** NAV **/
+#butt:checked ~ nav ol{
+	position: fixed;
+	top: 80px;
+}
+
+nav ol > li{
+	font-size: 20px;
+	margin: 0;
+	line-height: 50px;
+	display: flex;
+  	justify-content: center;
+	list-style-type: none;
+} 
+
+nav ol > li a{
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+nav ol > li a:hover{
+	transition: 0.5s;
+	border-bottom: solid 2px;
+	line-height: 48px;
+}
+}
+
+@media only screen and (min-width: 1008px) {
 
 nav{
 	width: 100%;
@@ -118,6 +242,16 @@ nav ol > li a:hover{
 	line-height: 78px;
 }
 
+}
+
+/** RWD END **/
+
+/** ---------------------------------------------------- **/
+
+/** NAV **/
+
+
+
 /** NAV END **/
 
 /** ---------------------------------------------------- **/
@@ -150,7 +284,7 @@ nav ol > li a:hover{
 /** PORTFOLIO **/
 
 #portfolio{
-	width: auto;
+	width: 100%;
 	display: flex;
   	align-items: center;
   	flex-direction: column;
